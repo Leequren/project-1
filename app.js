@@ -15,6 +15,7 @@ mongoose
     .catch(err => console.log(err));
 const app = express();
 app.use(expressLayouts);
+app.use(express.static(__dirname + '/static'));
 app.set('view engine', 'ejs');
 app.use(express.urlencoded({extended: true}));
 app.use(

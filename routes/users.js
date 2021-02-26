@@ -57,7 +57,7 @@ router.post('/register', (req, res) => {
                         if (err) throw err;
                         newUser.password = hash;
                         newUser
-                            .save()
+                            .save() 
                             .then(user => {
                                 req.flash(
                                     'success_msg',

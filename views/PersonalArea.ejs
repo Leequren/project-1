@@ -1,25 +1,101 @@
+<div id="header">
 
-<nav>
-    <div class="nav-wrapper">
+    <div class="top">
 
-        <ul id="nav-mobile" class="left hide-on-med-and-down">
-            <li><a href="">Таблица просмотра закупок по инн</a></li>
-            <li><a href="/users/logout">Выйти</a></li>
-        </ul>
-    </div>
-</nav>
-<div class="row">
-    <div class="col s6 push-s6">
-        <h3 style="text-align: center;">Функции:</h3>
-        <div><a href="" class="btn" style="display: block; margin-top: 40px; margin-bottom: 40px;">Посмотреть мою
-                текущую статистику</a></div>
-        <div><a href="" class="btn" style="display: block; margin-bottom: 40px;">Посмотреть запланированную
-                статистику</a></div>
-        <div><a href="" class="btn" style="display: block;">Добавить желаемую закупку</a></div>
-    </div>
-    <div class="col s6 pull-s6">
-        <h3 style="text-align: center;">Личный кабинет</h3>
-        <h3><span>Name:</span> <span><%= user.name %></span></h3>
+
+        <div id="logo">
+            <h3><span>Здравствуйте, </span> <span><%= user.name %></span></h3>
+        </div>
+
+
+        <nav id="nav">
+            <ul>
+                <li><a href="#top" id="top-link"><span class="icon solid fa-home">Personal Area</span></a></li>
+                <li><a href="#personalArea" id="personalArea-link"><span
+                                class="icon solid fa-th">Personal Area</span></a></li>
+                <li><a href="/users/logout" id="personalArea-link"><span class="icon solid fas fa-sign-out-alt"
+                                                                         style="margin-bottom: 10px;"><br></br>Выйти</span></a>
+                </li>
+
+                <!--								<li><a href="#about" id="about-link"><span class="icon solid fa-user">123</span></a></li>-->
+            </ul>
+        </nav>
 
     </div>
+
 </div>
+
+
+<div id="main">
+
+    <section id="top" class="one">
+        <div class="container">
+
+            <div class="container">
+
+                <header>
+                    <h2>Личный кабинет</h2>
+                </header>
+                <br><br><br>
+                <div>
+                    <button style="margin: 0 auto; margin-bottom: 10px; height: 100px; width:600px;">Посмотреть мою
+                        текущую статистику
+                    </button>
+                </div>
+                <div>
+                    <button style="margin: 0 auto; margin-bottom: 10px; height: 100px; width: 600px;">Посмотреть
+                        запланированную статистику
+                    </button>
+                </div>
+                <div>
+                    <button style="margin: 0 auto; margin-bottom: 10px; height: 100px; width: 600px;">Добавить желаемую
+                        закупку
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="personalArea" class="two">
+
+        <div class="container">
+
+            <header>
+                <h2>Поиск по инн</h2>
+            </header>
+            <div class="container">
+                <br>
+                <input>
+                <button class="button" style="width: 500px;">Найти</button>
+                <div class="container">
+                    <h1 style="margin: 0 auto;">Полученная информация:</h1>
+                    <div class="container"
+                         style="border-radius: 15px; background-color:rgb(168, 206, 206); position: relative; max-width: 600px;">
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+</div>
+
+
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery.scrolly.min.js"></script>
+<script src="assets/js/jquery.scrollex.min.js"></script>
+<script src="assets/js/browser.min.js"></script>
+<script src="assets/js/util.js"></script>
+
+<script src="assets/js/main.js"></script>
